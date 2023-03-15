@@ -1,13 +1,15 @@
 * Spring 2023 - Lab 08
 
-* Last name:
+* Last name: LaBarca
 
-* First name:
+* First name: Matthew
 
-* GitHub username:
+* GitHub username: mattlabarca10
 
 * Notes:
-
+invert - A,B
+box - C,D
+quality - E,F
 
   
 * General instructions:

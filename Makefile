@@ -9,4 +9,4 @@ imageio.o: imageio.cpp imageio.h
 
 
 clean:
-	rm -f sample.o imageio.o
+	rm -f sample sample.o imageio.o
