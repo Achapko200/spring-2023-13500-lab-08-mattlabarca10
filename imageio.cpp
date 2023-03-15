@@ -2,8 +2,6 @@
 #include <cassert>
 #include <cstdlib>
 #include <fstream>
-
-
 #include "imageio.h"
 
 

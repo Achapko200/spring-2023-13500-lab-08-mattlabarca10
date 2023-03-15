@@ -15,12 +15,16 @@ int main(){
   int out[MAX_H][MAX_W];
   for(int row = 0; row < h; row++) {
     for(int col = 0; col < w; col++) {
-      out[row][col] = (255-img[row][col]);
+      if((col == w/4 || col == 3*w/4 || row == h/4 || row == 3*h/4)&&(col >= w/4 && col <= 3*w/4 && row >= h/4 && row <= 3*h/4)){
+            out[row][col] = 255;
+      }
+        else
+            out[row][col] = img[row][col];
     }
   }
   
-  // and save this new image to file "taskA.pgm"
-  writeImage("taskA.pgm",out, h, w);
+  // and save this new image to file "taskD.pgm"
+  writeImage("taskD.pgm",out, h, w);
   
   return 0;
 }

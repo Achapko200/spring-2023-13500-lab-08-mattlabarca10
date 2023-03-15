@@ -7,10 +7,6 @@
 * GitHub username: mattlabarca10
 
 * Notes:
-invert - A,B
-box - C,D
-quality - E,F
-
   
 * General instructions:
 - Fill in your name and GitHub username on top.
