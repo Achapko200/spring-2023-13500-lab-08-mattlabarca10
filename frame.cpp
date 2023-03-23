@@ -2,7 +2,7 @@
 #include <string>
 #include "imageio.h"
 
-int main(){
+int frame(){
   std::string input = "image1.pgm";
   int img[MAX_H][MAX_W];
   int h, w;

@@ -2,7 +2,7 @@
 #include <string>
 #include "imageio.h"
 
-int main(){
+int pixelate(){
   std::string input = "image1.pgm";
   int img[MAX_H][MAX_W];
   int h, w;
@@ -10,7 +10,7 @@ int main(){
   // read it from the file "image1.pgm"
   // h and w were passed by reference and now contain the dimensions of the picture
   // and the 2-dimesional array img contains the image data
-  // Now we can invert the image
+  // Now we can pixelate the image
   int out[MAX_H][MAX_W];
   int avg;
   for(int row = 0; row < h; row+=2) {

@@ -4,7 +4,7 @@
 #include <cmath>
 #include "imageio.h"
 
-int main(){
+int kernel(){
     std::string input = "image1.pgm";
     int img[MAX_H][MAX_W];
     int h, w;

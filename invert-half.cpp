@@ -2,7 +2,7 @@
 #include <string>
 #include "imageio.h"
 
-int main(){
+int half(){
   std::string input = "image2.pgm";
   int img[MAX_H][MAX_W];
   int h, w;
