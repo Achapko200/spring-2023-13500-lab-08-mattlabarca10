@@ -2,3 +2,4 @@
 
 int box();
 int frame();
+int half();
