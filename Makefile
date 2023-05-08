@@ -5,19 +5,7 @@ main.o: main.cpp invert.h invert-half.h box.h frame.h scale.h pixelate.h kernel.
 
 imageio.o: imageio.cpp imageio.h
 
-invert.o: invert.cpp imageio.h
-
-invert-half.o: invert-half.cpp imageio.h
-
 box.o: box.cpp imageio.h
-
-frame.o: frame.cpp imageio.h
-
-scale.o: scale.cpp imageio.h
-
-pixelate.o: pixelate.cpp imageio.h
-
-kernel.o: kernel.cpp imageio.h
 
 sample: sample.o imageio.o
 	g++ -o sample sample.o imageio.o
