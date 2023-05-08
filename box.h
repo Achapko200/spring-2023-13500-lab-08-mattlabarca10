@@ -5,3 +5,4 @@ int frame();
 int half();
 int invert();
 int kernel();
+int pixelate();
