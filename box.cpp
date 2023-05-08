@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "box.h"
 #include "imageio.h"
 
 int box(){
@@ -59,16 +60,6 @@ int half(){
   return 0;
 }
 int invert(){
-  std::string input = "image1.pgm";
-  int img[MAX_H][MAX_W];
-  int h, w;
-  readImage(input, img, h, w); 
-  // read it from the file "image1.pgm"
-  // h and w were passed by reference and now contain the dimensions of the picture
-  // and the 2-dimesional array img contains the image data
-  
-  // Now we can invert the image
-  int out[MAX_H][MAX_W];
   for(int row = 0; row < h; row++) {
     for(int col = 0; col < w; col++) {
       out[row][col] = (255-img[row][col]);
@@ -81,15 +72,6 @@ int invert(){
   return 0;
 }
 int kernel(){
-    std::string input = "image1.pgm";
-    int img[MAX_H][MAX_W];
-    int h, w;
-    readImage(input, img, h, w); 
-    // read it from the file "image1.pgm"
-    // h and w were passed by reference and now contain the dimensions of the picture
-    // and the 2-dimesional array img contains the image data
-    // Now we can invert the image
-    int out[MAX_H][MAX_W];
     for(int row = 0; row < h; row++) {
         for(int col = 0; col < w; col++) {
             if(col==0 || col==w-1 || row==0 || row==h-1)
@@ -110,15 +92,6 @@ int kernel(){
     return 0;
 }
 int pixelate(){
-  std::string input = "image1.pgm";
-  int img[MAX_H][MAX_W];
-  int h, w;
-  readImage(input, img, h, w); 
-  // read it from the file "image1.pgm"
-  // h and w were passed by reference and now contain the dimensions of the picture
-  // and the 2-dimesional array img contains the image data
-  // Now we can pixelate the image
-  int out[MAX_H][MAX_W];
   int avg;
   for(int row = 0; row < h; row+=2) {
     for(int col = 0; col < w; col+=2) {
@@ -136,15 +109,6 @@ int pixelate(){
   return 0;
 }
 int scale(){
-  std::string input = "image1.pgm";
-  int img[MAX_H][MAX_W];
-  int h, w;
-  readImage(input, img, h, w); 
-  // read it from the file "image1.pgm"
-  // h and w were passed by reference and now contain the dimensions of the picture
-  // and the 2-dimesional array img contains the image data
-  // Now we can invert the image
-  int out[MAX_H][MAX_W];
   for(int row = 0; row < h; row+=2) {
     for(int col = 0; col < w; col+=2) {
         out[row][col] = img[row/2][col/2];
